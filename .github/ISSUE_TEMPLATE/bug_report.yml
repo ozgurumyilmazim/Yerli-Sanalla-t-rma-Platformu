@@ -1,0 +1,42 @@
+name: Hata bildirimi
+description: Yeniden üretilebilir bir hata bildirin
+title: "[HATA] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Güvenlik açıklarını burada bildirmeyin; SECURITY.md dosyasını okuyun."
+  - type: textarea
+    id: summary
+    attributes:
+      label: Hatanın özeti
+      description: Ne oldu?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Yeniden üretme adımları
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Beklenen davranış
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Gerçekleşen davranış
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Sürüm / commit
+  - type: textarea
+    id: logs
+    attributes:
+      label: İlgili günlükler
+      description: Parola, token ve kişisel/hassas verileri temizleyin.
