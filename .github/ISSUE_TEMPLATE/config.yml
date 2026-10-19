@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Güvenlik bildirimi
+    url: https://github.com/
+    about: Güvenlik ayrıntılarını herkese açık issue olarak yayımlamayın. SECURITY.md dosyasını izleyin.
